@@ -108,6 +108,7 @@ a {
   margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: 3px;
+  margin-left: 15px;
 }
 
 .bunner__box > span {
@@ -244,6 +245,16 @@ a {
   width: 100%;
 }
 
+@media screen and (max-width: 800px) {
+  .about__best-img {
+    display: none;
+  }
+
+  .about__best-content {
+    padding: 90px 20px;
+  }
+}
+
 /** END ABOUT **/
 
 .about__info {
@@ -346,6 +357,16 @@ a {
   width: 140px;
   height: 140px;
   line-height: 8.5;
+}
+
+@media screen and (max-width: 800px) {
+  .about__info-services {
+    display: block;
+  }
+
+  .about__info-services div {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -494,7 +515,7 @@ a {
 
 @media screen and (max-width: 1130px) {
   .team__person {
-    margin-bottom: 5%;
+    margin: 10px;
   }
 
   .team__peoples {
@@ -669,6 +690,10 @@ a {
   position: relative;
 }
 
+.blog__post-img img {
+  width: 100%;
+}
+
 .blog__post-img:before {
   content: '';
   width: 15px;
@@ -793,7 +818,7 @@ a {
 
 .contact textarea {
   font-family: inherit;
-  width: 100%;
+  width: 99%;
   border: none;
   border-top: 4px solid #242424;
   border-bottom: 1px solid black;
@@ -815,6 +840,7 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 60px 0;
+  flex-wrap: wrap;
 }
 
 .footer__box-block {
@@ -853,6 +879,10 @@ a {
 
 .footer__recent span {
   line-height: 1.7;
+}
+
+.footer__recent span > span {
+  line-height: 0;
 }
 
 .footer__recent-date {
