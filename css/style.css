@@ -20,6 +20,8 @@ a {
   margin: 0 auto;
   line-height: 2.4;
   align-items: center;
+  padding: 0 15px;
+  position: relative;
 }
 
 .header__box a {
@@ -31,18 +33,65 @@ a {
   font-size: 250%;
 }
 
-.header__box ul {
+.header__menu {
   display: flex;
 }
 
-.header__box ul li {
+.header__menu li {
   margin: 0 20px;
   text-transform: uppercase;
   font-size: 80%;
 }
 
-.header__box ul li:last-child {
+.header__menu li:last-child {
   margin-right: 0;
+}
+
+.toggle-nav {
+  display: none;
+}
+
+@media screen and ( max-width: 900px ) {
+
+  .header__box {
+    border-bottom: 5px solid #464646;
+  }
+
+  .header__box a {
+    display: block;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__box ul {
+    position: absolute;
+    right: 0;
+    top: 105%;
+    width: 100%;
+    text-align: right;
+    background: #303030;
+  }
+
+  .header__box ul > li {
+    position: relative;
+    padding-right: 15px;
+    line-height: 3.5;
+  }
+
+  .header__box ul > li:after {
+    content: '';
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: #464646;
+    position: absolute;
+  }
+
+  .header__box ul > li:last-child:after {
+    background: inherit;
+  }
 }
 
 /** END HEADER **/
@@ -270,6 +319,7 @@ a {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .about__box-circle {
@@ -296,6 +346,18 @@ a {
   width: 140px;
   height: 140px;
   line-height: 8.5;
+}
+
+@media screen and (max-width: 900px) {
+  .about__box-circles {
+    margin: 5%;
+    justify-content: center;
+  }
+
+  .about__box-circle {
+    margin: 1%;
+    padding-bottom: 0;
+  }
 }
 
 /** END ABOUT **/
@@ -427,6 +489,17 @@ a {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto 95px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1130px) {
+  .team__person {
+    margin-bottom: 5%;
+  }
+
+  .team__peoples {
+    justify-content: center;
+  }
 }
 
 .team__person:hover .team__name {
