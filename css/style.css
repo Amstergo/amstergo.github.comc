@@ -108,7 +108,7 @@ a {
   margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-left: 15px;
+  padding-left: 15px;
 }
 
 .bunner__box > span {
@@ -196,20 +196,8 @@ a {
 
 .about__best-content {
   padding: 90px 77px;
-  position: relative;
   overflow: hidden;
   max-width: 1200px;
-}
-
-.about__best-content:after {
-  content: '';
-  background: #7b6d6417;
-  transform: rotate(48deg);
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
 }
 
 .about__best-content h1 {
