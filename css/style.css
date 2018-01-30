@@ -555,7 +555,8 @@ a {
 
 .team__avatar ul li:first-child {
   transform: translateX(-200%);
-  transition: transform .4s ease-out, -webkit-transform .4s ease-out;
+  transform: translateY(0%);
+  transition: transform .6s ease-out, -webkit-transform .6s ease-out;
 }
 
 .team__person:hover .team__avatar ul li:first-child {
@@ -564,7 +565,8 @@ a {
 
 .team__avatar ul li:last-child {
   transform: translateX(200%);
-  transition: transform .4s ease-out, -webkit-transform .4s ease-out;
+  transform: translateY(0%);
+  transition: transform .6s ease-out, -webkit-transform .6s ease-out;
 }
 
 .team__person:hover .team__avatar ul li:last-child {
