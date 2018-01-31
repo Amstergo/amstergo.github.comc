@@ -1006,6 +1006,11 @@ a {
 
 .footer__recent span > span {
   line-height: 0;
+  transition: .3s;
+}
+
+.footer__recent span > span:hover {
+  color: #7d5d48;
 }
 
 .footer__recent-date {
